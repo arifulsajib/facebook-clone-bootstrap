@@ -86,29 +86,34 @@
               </div>
             </div>
             <!-- nevigation col -->
-            <div class="d-none col d-xl-flex align-items-center justify-content-center text-muted">
+            <div class="d-none col d-xl-flex align-items-center justify-content-center">
               <!-- home -->
               <div class="mx-4 nav-btn navBtn-active">
                 <button class="btn px-3">
-                  <i class="fa-solid fa-home fs-4"></i>
+                  <i class="fa-solid fa-home fs-4 text-muted"></i>
                 </button>
               </div>
               <!-- stores -->
               <div class="mx-4 nav-btn">
                 <button class="btn px-3">
-                  <i class="fa-solid fa-store fs-4"></i>
+                  <i class="fa-solid fa-store fs-4 text-muted"></i>
                 </button>
               </div>
               <!-- users -->
               <div class="mx-4 nav-btn">
                 <button class="btn px-3">
-                  <i class="fa-solid fa-users fs-4"></i>
+                  <i class="fa-solid fa-users fs-4 text-muted position-relative">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-8">
+                      1
+                      <span class="visually-hidden">Friend requests</span>
+                    </span>
+                  </i>
                 </button>
               </div>
               <!-- gamepad -->
               <div class="mx-4 nav-btn">
                 <button class="btn px-3">
-                  <i class="fa-solid fa-gamepad fs-4"></i>
+                  <i class="fa-solid fa-gamepad fs-4 text-muted"></i>
                 </button>
               </div>
             </div>
@@ -119,9 +124,258 @@
                 <img class="object-fit-cover rounded-circle me-2" src="https://source.unsplash.com/collection/happy-people" alt="avatar" width="38px" height="38px" />
                 <p class="my-auto">Sajib</p>
               </div>
-              <!-- menu -->
-              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
-                <i class="fa-solid fa-ellipsis object-fit-cover" alt="menu"></i>
+              <!-- main menu -->
+              <div>
+                <!-- icon -->
+                <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <i class="fa-solid fa-ellipsis object-fit-cover" alt="menu"></i>
+                </div>
+                <!-- main menu dd -->
+                <ul class="dropdown-menu p-3 border-0 shadow overflow-auto" style="max-height: 600px; width: 23em">
+                  <!-- menu part-->
+                  <div>
+                    <li>
+                      <h2 class="my-3">Menu</h2>
+                    </li>
+                    <!-- menu search -->
+                    <li>
+                      <div class="input-group-text bg-grey text-muted rounded-pill my-3" style="min-height: 40px; min-width: 230px">
+                        <i class="fa-solid fa-magnifying-glass me-2"></i>
+                        <input type="text" class="form-control fs-7 w-100 border-0 bg-grey rounded-pill" placeholder="Search Menu" />
+                      </div>
+                    </li>
+                    <!-- social menu part -->
+                    <div>
+                      <li>
+                        <h3 class="my-3">Social</h3>
+                      </li>
+                      <!-- s1 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s1.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Campus</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- s2 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s6.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Events</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- s3 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s3.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Friends</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- s4 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s4.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Groups</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- s5 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s5.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">News Feed</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- s6 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s6.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Pages</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                    </div>
+
+                    <hr />
+                    <!-- Entertainment menu part -->
+                    <div>
+                      <li>
+                        <h3 class="my-3">Entertainment</h3>
+                      </li>
+                      <!-- e1 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s1.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Campus</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- e2 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s6.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Events</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- e3 -->
+                      <li class="p-1 my-3">
+                        <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                          <div class="p-2">
+                            <img src="./images/social/s3.png" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                          </div>
+                          <div class="p-1">
+                            <p class="m-0">Friends</p>
+                            <span class="fs-7 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, alias.</span>
+                          </div>
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+
+                  <hr />
+                  <!-- Create part -->
+                  <div>
+                    <li>
+                      <h2 class="my-3">Create</h2>
+                    </li>
+                    <!-- post -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-edit fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Post</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- story -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-book-open fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Story</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- video -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-video fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Video</p>
+                        </div>
+                      </a>
+                    </li>
+                    <hr />
+                    <!-- page -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-flag fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Page</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- add -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-bullhorn fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Add</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- group -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-users fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Group</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Event -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-book fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Event</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- marketplace Listing -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-shopping-basket fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Marketplace Listing</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- job -->
+                    <li class="p-1 my-3">
+                      <a class="text-decoration-none d-flex align-items-center text-dark" href="#">
+                        <div class="p-2 bg-grey rounded-circle" style="width: 40px; height: 40px">
+                          <i class="fas fa-suitcase fs-5 object-fit-cover"></i>
+                        </div>
+                        <div class="px-3">
+                          <p class="m-0">Job</p>
+                        </div>
+                      </a>
+                    </li>
+                  </div>
+                </ul>
               </div>
               <!-- message -->
               <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">

@@ -1,6 +1,9 @@
 .fs-7 {
   font-size: 0.8rem;
 }
+.fs-8 {
+  font-size: 0.5rem;
+}
 .fs-0 {
   font-size: 4rem;
 }
@@ -11,11 +14,14 @@
 /* Navbar */
 .nav-btn:hover {
   background-color: #f0f2f5;
-  color: blue;
+}
+
+.nav-btn:hover i {
+  color: #0d6efd !important;
 }
 
 .navBtn-active i {
-  color: blue;
+  color: #0d6efd !important;
 }
 
 .navBtn-active {
@@ -27,7 +33,7 @@
   position: absolute;
   bottom: -6px;
   width: 100%;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #0d6efd;
 }
 
 /* @media (min-width: 800px) {
