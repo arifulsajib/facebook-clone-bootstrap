@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flexbook</title>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/fa27bc392d.js" crossorigin="anonymous"></script>
     <!-- bootstrap css -->
@@ -12,8 +12,91 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="bg-grey">
-    <h1>feed</h1>
+  <body>
+    <header>
+      <!--######## NavBar ########-->
+      <div class="shadow bg-white fixed-top p-1" style="min-height: 56px">
+        <div class="contianer-fluid">
+          <div class="row">
+            <!-- Icon and search col -->
+            <div class="col">
+              <div class="d-flex align-items-center">
+                <!-- icon -->
+                <i class="fa-brands fa-facebook text-primary mx-2" style="font-size: 3rem"></i>
+                <!-- search -->
+                <div class="input-group" type="button">
+                  <!-- search Desktop -->
+                  <span class="input-group-prepend d-none d-lg-block">
+                    <div class="input-group-text bg-grey text-muted rounded-pill" style="min-height: 40px; min-width: 230px">
+                      <i class="fa-solid fa-magnifying-glass me-2"></i>
+                      <p class="fs-7 my-auto">Search Flexbook</p>
+                    </div>
+                  </span>
+                  <!-- Search Mobile -->
+                  <span class="input-group-prepend d-lg-none">
+                    <div class="input-group-text bg-grey text-muted rounded-circle" style="min-height: 40px">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </span>
+                  <!-- search button dd -->
+                </div>
+              </div>
+            </div>
+            <!-- nevigation col -->
+            <div class="d-none col d-xl-flex align-items-center justify-content-center text-muted">
+              <!-- home -->
+              <div class="mx-4 nav-btn navBtn-active">
+                <button class="btn px-3">
+                  <i class="fa-solid fa-home fs-4"></i>
+                </button>
+              </div>
+              <!-- stores -->
+              <div class="mx-4 nav-btn">
+                <button class="btn px-3">
+                  <i class="fa-solid fa-store fs-4"></i>
+                </button>
+              </div>
+              <!-- users -->
+              <div class="mx-4 nav-btn">
+                <button class="btn px-3">
+                  <i class="fa-solid fa-users fs-4"></i>
+                </button>
+              </div>
+              <!-- gamepad -->
+              <div class="mx-4 nav-btn">
+                <button class="btn px-3">
+                  <i class="fa-solid fa-gamepad fs-4"></i>
+                </button>
+              </div>
+            </div>
+            <!-- menus col -->
+            <div class="col d-flex align-items-center justify-content-end">
+              <!-- avatar -->
+              <div class="d-none d-lg-flex align-items-center justify-content-center">
+                <img class="object-fit-cover rounded-circle me-2" src="https://source.unsplash.com/collection/happy-people" alt="avatar" width="38px" height="38px" />
+                <p class="my-auto">Sajib</p>
+              </div>
+              <!-- menu -->
+              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
+                <i class="fa-solid fa-ellipsis object-fit-cover" alt="menu"></i>
+              </div>
+              <!-- message -->
+              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
+                <i class="fa-solid fa-comment object-fit-cover" alt="menu"></i>
+              </div>
+              <!-- notification -->
+              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
+                <i class="fa-solid fa-bell object-fit-cover" alt="menu"></i>
+              </div>
+              <!-- profile -->
+              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
+                <i class="fa-solid fa-chevron-down object-fit-cover" alt="menu"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Boostrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

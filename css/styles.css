@@ -8,6 +8,28 @@
   background-color: #f0f2f5;
 }
 
+/* Navbar */
+.nav-btn:hover {
+  background-color: #f0f2f5;
+  color: blue;
+}
+
+.navBtn-active i {
+  color: blue;
+}
+
+.navBtn-active {
+  position: relative;
+}
+
+.navBtn-active:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  border-bottom: 3px solid blue;
+}
+
 /* @media (min-width: 800px) {
   footer {
     position: fixed;
