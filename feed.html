@@ -26,19 +26,62 @@
                 <!-- search -->
                 <div class="input-group" type="button">
                   <!-- search Desktop -->
-                  <span class="input-group-prepend d-none d-lg-block">
+                  <span class="input-group-prepend d-none d-lg-block" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                     <div class="input-group-text bg-grey text-muted rounded-pill" style="min-height: 40px; min-width: 230px">
                       <i class="fa-solid fa-magnifying-glass me-2"></i>
                       <p class="fs-7 my-auto">Search Flexbook</p>
                     </div>
                   </span>
                   <!-- Search Mobile -->
-                  <span class="input-group-prepend d-lg-none">
+                  <span class="input-group-prepend d-lg-none" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                     <div class="input-group-text bg-grey text-muted rounded-circle" style="min-height: 40px">
                       <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                   </span>
                   <!-- search button dd -->
+                  <ul class="dropdown-menu overflow-auto p-3 shadow" style="width: 20em; max-height: 600px">
+                    <!-- search box -->
+                    <li>
+                      <input type="text" class="bg-grey border-0 text-muted py-1 px-3 rounded-pill w-100" placeholder="Search Flexbook...." autofocus />
+                    </li>
+                    <!-- search1 -->
+                    <li>
+                      <div class="alert dropdown-item d-flex justify-content-between align-items-center my-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <img class="rounded-circle object-fit-cover mx-2" src="https://source.unsplash.com/random/1" alt="" width="30px" height="30px" />
+                          <p class="my-auto">Lorem ipsum</p>
+                        </div>
+                        <div>
+                          <button class="btn btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- search2 -->
+                    <li>
+                      <div class="alert dropdown-item d-flex justify-content-between align-items-center my-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <img class="rounded-circle object-fit-cover mx-2" src="https://source.unsplash.com/random/" alt="" width="30px" height="30px" />
+                          <p class="my-auto">Lorem ipsum</p>
+                        </div>
+                        <div>
+                          <button class="btn btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- search3 -->
+                    <li>
+                      <div class="alert dropdown-item d-flex justify-content-between align-items-center my-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                          <img class="rounded-circle object-fit-cover mx-2" src="https://source.unsplash.com/random/3" alt="" width="30px" height="30px" />
+                          <p class="my-auto">Lorem ipsum</p>
+                        </div>
+                        <div>
+                          <button class="btn btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- dd end -->
                 </div>
               </div>
             </div>
