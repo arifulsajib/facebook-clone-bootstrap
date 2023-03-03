@@ -384,7 +384,7 @@
                   <i class="fa-solid fa-comment object-fit-cover" alt="message"></i>
                 </div>
                 <!-- message menu dd -->
-                <ul class="dropdown-menu overflow-auto border-0 p-3" style="width: 23em; max-height: 600px">
+                <ul class="dropdown-menu overflow-auto border-0 p-3 shadow" style="width: 23em; max-height: 600px">
                   <!-- message header and setting-->
                   <li class="p-1">
                     <div class="d-flex align-items-center justify-content-between">
@@ -579,13 +579,231 @@
                 </ul>
                 <!-- dd end -->
               </div>
-              <!-- notification -->
-              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
-                <i class="fa-solid fa-bell object-fit-cover" alt="menu"></i>
+              <!-- notification menu -->
+              <div>
+                <!-- notification menu icon -->
+                <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <i class="fa-solid fa-bell object-fit-cover" alt="menu"></i>
+                </div>
+                <!-- notification menu dd -->
+                <ul class="dropdown-menu overflow-auto border-0 p-3 shadow" style="width: 23em; max-height: 600px">
+                  <!-- notification header and setting-->
+                  <li class="p-1">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h2>Notifications</h2>
+                      <!-- notification setting -->
+                      <div>
+                        <!-- notification setting icon -->
+                        <div class="py-1 rounded-circle bg-grey" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis mx-2 object-fit-cover" alt="menu"></i>
+                        </div>
+                        <!-- notification setting dd -->
+                        <ul class="dropdown-menu p-1 border-0 shadow overflow-auto">
+                          <!-- mark all read -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-check me-2"></i>
+                              <p class="my-auto">Mark all as read</p>
+                            </div>
+                          </li>
+                          <!-- privacy check -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-cog me-2"></i>
+                              <p class="my-auto">Privacy Checkup</p>
+                            </div>
+                          </li>
+                          <!-- privacy shortcut -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-desktop me-2"></i>
+                              <p class="my-auto">Privacy Shorcuts</p>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- dd end -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- notification filter -->
+                  <li>
+                    <button class="bg-grey rounded-circle border-0 py-1 px-2">All</button>
+                    <button class="bg-primary rounded-pill border-0 py-1 px-2 text-white">Unread</button>
+                  </li>
+                  <!-- notification list -->
+                  <li class="p-1 mt-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>New</h4>
+                      <a class="text-decoration-none" href="#">See All</a>
+                    </div>
+                  </li>
+                  <!-- notification1 -->
+                  <li class="p-1 my-2">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/1" alt="" class="object-fit-cover rounded-circle" width="58px" height="58px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0 fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem.</p>
+                          <span class="fs-7 text-primary">about an hour ago</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-circle">
+                        <i class="fa-solid fa-circle text-primary fs-7"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- notification2 -->
+                  <li class="p-1 my-2">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/2" alt="" class="object-fit-cover rounded-circle" width="58px" height="58px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0 fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem.</p>
+                          <span class="fs-7 text-primary">about an hour ago</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-circle">
+                        <i class="fa-solid fa-circle text-primary fs-7"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- notification3 -->
+                  <li class="p-1 my-2">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/3" alt="" class="object-fit-cover rounded-circle" width="58px" height="58px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0 fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem.</p>
+                          <span class="fs-7 text-primary">about an hour ago</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-circle">
+                        <i class="fa-solid fa-circle text-primary fs-7"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- notification4 -->
+                  <li class="p-1 my-2">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/4" alt="" class="object-fit-cover rounded-circle" width="58px" height="58px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0 fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem.</p>
+                          <span class="fs-7 text-primary">about an hour ago</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-circle">
+                        <i class="fa-solid fa-circle text-primary fs-7"></i>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- notification5 -->
+                  <li class="p-1 my-2">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/5" alt="" class="object-fit-cover rounded-circle" width="58px" height="58px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0 fs-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem.</p>
+                          <span class="fs-7 text-primary">about an hour ago</span>
+                        </div>
+                      </div>
+                      <div class="p-2 rounded-circle">
+                        <i class="fa-solid fa-circle text-primary fs-7"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- dd end -->
               </div>
-              <!-- profile -->
-              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
-                <i class="fa-solid fa-chevron-down object-fit-cover" alt="menu"></i>
+              <!-- Secondary menu -->
+              <div>
+                <!-- Secondary menu icon -->
+                <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <i class="fa-solid fa-chevron-down object-fit-cover" alt="menu"></i>
+                </div>
+                <!-- Secondary menu dd -->
+                <ul class="dropdown-menu overflow-auto border-0 p-3 shadow" style="width: 23em; max-height: 600px">
+                  <!-- profile -->
+                  <li class="my-3">
+                    <a class="dropdown-item text-decoration-none d-flex align-items-center text-dark" href="#">
+                      <div class="me-2">
+                        <img src="https://source.unsplash.com/random/1" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                      </div>
+                      <div class="p-1">
+                        <p class="m-0 fw-bold">Sajib</p>
+                        <span class="text-muted">See your profile</span>
+                      </div>
+                    </a>
+                  </li>
+                  <hr />
+                  <!-- feedback -->
+                  <li class="my-3">
+                    <a class="dropdown-item text-decoration-none d-flex align-items-center text-dark" href="#">
+                      <div class="py-1 px-2 bg-grey rounded-circle me-2">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                      </div>
+                      <div class="p-2">
+                        <p class="m-0">Give Feedback</p>
+                        <span class="fs-7 text-muted">Help us improve the new Flexbook</span>
+                      </div>
+                    </a>
+                  </li>
+                  <hr />
+                  <!-- setting and privacy -->
+                  <li class="my-3">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-cog me-3"></i>
+                        <p class="my-auto">Settings & Privacy</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- help and support -->
+                  <li class="my-3">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-question-circle me-3"></i>
+                        <p class="my-auto">Help & Support</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Display and acces -->
+                  <li class="my-3">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-moon me-3"></i>
+                        <p class="my-auto">Display & Accessibility</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- logout -->
+                  <li class="my-3">
+                    <a href="./index.html" class="dropdown-item d-flex align-items-center">
+                      <i class="fa-solid fa-cog me-3"></i>
+                      <p class="my-auto">Log Out</p>
+                    </a>
+                  </li>
+                </ul>
+                <!-- dd end -->
               </div>
             </div>
           </div>
