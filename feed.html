@@ -126,7 +126,7 @@
               </div>
               <!-- main menu -->
               <div>
-                <!-- icon -->
+                <!-- main menu icon -->
                 <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                   <i class="fa-solid fa-ellipsis object-fit-cover" alt="menu"></i>
                 </div>
@@ -377,9 +377,207 @@
                   </div>
                 </ul>
               </div>
-              <!-- message -->
-              <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
-                <i class="fa-solid fa-comment object-fit-cover" alt="menu"></i>
+              <!-- message menu -->
+              <div>
+                <!-- message menu icon -->
+                <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <i class="fa-solid fa-comment object-fit-cover" alt="message"></i>
+                </div>
+                <!-- message menu dd -->
+                <ul class="dropdown-menu overflow-auto border-0 p-3" style="width: 23em; max-height: 600px">
+                  <!-- message header and setting-->
+                  <li class="p-1">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h2>Message</h2>
+                      <div class="d-flex text-muted">
+                        <!-- message setting -->
+                        <div>
+                          <!-- message setting icon -->
+                          <i class="fa-solid fa-ellipsis mx-2 object-fit-cover" alt="menu" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></i>
+                          <!-- message setting dd -->
+                          <ul class="dropdown-menu p-1 border-0 shadow overflow-auto" style="width: 18em">
+                            <!-- dd message setting header -->
+                            <li class="p-1 my-3">
+                              <h4>Chat Setting</h4>
+                              <p class="text-muted fs-7 m-0">Customize your Messanger experience</p>
+                            </li>
+                            <hr />
+                            <!-- incoming call sounds  -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                  <i class="fa-solid fa-phone me-2"></i>
+                                  <p class="my-auto">Incoming call sounds</p>
+                                </div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch" checked />
+                                </div>
+                              </div>
+                            </li>
+                            <!-- message sounds -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                  <i class="fa-solid fa-volume-off me-2"></i>
+                                  <p class="my-auto">Message sounds</p>
+                                </div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch" checked />
+                                </div>
+                              </div>
+                            </li>
+                            <!-- popup message -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                  <i class="fa-solid fa-spinner me-2"></i>
+                                  <p class="my-auto">Pop-up new messages</p>
+                                </div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" role="switch" checked />
+                                </div>
+                              </div>
+                            </li>
+                            <p class="fs-7 text-muted text-center m-0">Automatically open new messages</p>
+                            <hr />
+                            <!-- Turn off active -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center">
+                                <i class="fa-solid fa-toggle-off me-2"></i>
+                                <p class="my-auto">Incoming call sounds</p>
+                              </div>
+                            </li>
+                            <!-- message request -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center">
+                                <i class="fa-solid fa-comment-alt me-2"></i>
+                                <p class="my-auto">Message Request</p>
+                              </div>
+                            </li>
+                            <!-- message delivery -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center">
+                                <i class="fa-solid fa-share-square me-2"></i>
+                                <p class="my-auto">Message delivery setting</p>
+                              </div>
+                            </li>
+                            <!-- block -->
+                            <li class="my-2">
+                              <div class="dropdown-item d-flex align-items-center">
+                                <i class="fa-solid fa-shield-alt me-2"></i>
+                                <p class="my-auto">Block setting</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- dd end -->
+                        </div>
+                        <!-- message expand -->
+                        <i class="fa-solid fa-expand-arrows-alt mx-2 object-fit-cover" alt="expand"></i>
+                        <!-- new message -->
+                        <i class="fa-solid fa-edit mx-2 object-fit-cover" alt="edit"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- message search -->
+                  <li>
+                    <div class="input-group-text bg-grey text-muted rounded-pill my-3" style="min-height: 40px; min-width: 230px">
+                      <i class="fa-solid fa-magnifying-glass me-2"></i>
+                      <input type="text" class="form-control fs-7 w-100 border-0 bg-grey rounded-pill" placeholder="Search Messanger" />
+                    </div>
+                  </li>
+                  <!-- message chat list -->
+                  <!-- Chat1 -->
+                  <li class="p-1 my-3">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/1" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0">Sajib</p>
+                          <span class="fs-7 text-muted">Lorem ipsum • 7d</span>
+                        </div>
+                      </div>
+                      <div class="p-2">
+                        <img src="https://source.unsplash.com/random/1" alt="" class="object-fit-cover rounded-circle" width="17px" height="17px" />
+                      </div>
+                    </a>
+                  </li>
+                  <!-- Chat2 -->
+                  <li class="p-1 my-3">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/2" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0">Mike</p>
+                          <span class="fs-7 text-muted">Lorem ipsum • 7d</span>
+                        </div>
+                      </div>
+                      <div class="p-2">
+                        <img src="https://source.unsplash.com/random/2" alt="" class="object-fit-cover rounded-circle" width="17px" height="17px" />
+                      </div>
+                    </a>
+                  </li>
+                  <!-- Chat3 -->
+                  <li class="p-1 my-3">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/3" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0">Mehedy</p>
+                          <span class="fs-7 text-muted">Lorem ipsum • 7d</span>
+                        </div>
+                      </div>
+                      <div class="p-2">
+                        <img src="https://source.unsplash.com/random/3" alt="" class="object-fit-cover rounded-circle" width="17px" height="17px" />
+                      </div>
+                    </a>
+                  </li>
+                  <!-- Chat4 -->
+                  <li class="p-1 my-3">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/4" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0">Stone</p>
+                          <span class="fs-7 text-muted">Lorem ipsum • 7d</span>
+                        </div>
+                      </div>
+                      <div class="p-2">
+                        <img src="https://source.unsplash.com/random/4" alt="" class="object-fit-cover rounded-circle" width="17px" height="17px" />
+                      </div>
+                    </a>
+                  </li>
+                  <!-- Chat5 -->
+                  <li class="p-1 my-3">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img src="https://source.unsplash.com/random/5" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
+                        </div>
+                        <div class="p-1">
+                          <p class="m-0">Munna</p>
+                          <span class="fs-7 text-muted">Lorem ipsum • 7d</span>
+                        </div>
+                      </div>
+                      <div class="p-2">
+                        <img src="https://source.unsplash.com/random/5" alt="" class="object-fit-cover rounded-circle" width="17px" height="17px" />
+                      </div>
+                    </a>
+                  </li>
+                  <hr />
+                  <!-- message see all -->
+                  <li class="mt-3 text-center">
+                    <a class="dropdown-item fw-bold text-primary" href="#">See All in Messanger</a>
+                  </li>
+                </ul>
+                <!-- dd end -->
               </div>
               <!-- notification -->
               <div class="d-flex align-items-center justify-content-center mx-2 rounded-circle bg-grey" style="width: 38px; height: 38px">
