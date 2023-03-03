@@ -474,7 +474,7 @@
                         <!-- message expand -->
                         <i class="fa-solid fa-expand-arrows-alt mx-2 object-fit-cover" alt="expand"></i>
                         <!-- new message -->
-                        <i class="fa-solid fa-edit mx-2 object-fit-cover" alt="edit"></i>
+                        <i class="fa-solid fa-edit mx-2 object-fit-cover" alt="edit" type="button" data-bs-toggle="modal" data-bs-target="#newChat"></i>
                       </div>
                     </div>
                   </li>
@@ -488,7 +488,7 @@
                   <!-- message chat list -->
                   <!-- Chat1 -->
                   <li class="p-1 my-3">
-                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           <img src="https://source.unsplash.com/random/1" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
@@ -505,7 +505,7 @@
                   </li>
                   <!-- Chat2 -->
                   <li class="p-1 my-3">
-                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           <img src="https://source.unsplash.com/random/2" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
@@ -522,7 +522,7 @@
                   </li>
                   <!-- Chat3 -->
                   <li class="p-1 my-3">
-                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           <img src="https://source.unsplash.com/random/3" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
@@ -539,7 +539,7 @@
                   </li>
                   <!-- Chat4 -->
                   <li class="p-1 my-3">
-                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           <img src="https://source.unsplash.com/random/4" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
@@ -556,7 +556,7 @@
                   </li>
                   <!-- Chat5 -->
                   <li class="p-1 my-3">
-                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#">
+                    <a class="text-decoration-none d-flex align-items-center justify-content-between text-dark" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
                       <div class="d-flex align-items-center">
                         <div class="p-2">
                           <img src="https://source.unsplash.com/random/5" alt="" class="object-fit-cover rounded-circle" width="48px" height="48px" />
@@ -761,7 +761,7 @@
                   <hr />
                   <!-- setting and privacy -->
                   <li class="my-3">
-                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <div class="d-flex align-items-center">
                         <i class="fa-solid fa-cog me-3"></i>
                         <p class="my-auto">Settings & Privacy</p>
@@ -770,10 +770,62 @@
                         <i class="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
+                    <!-- dd -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- dd end -->
                   </li>
                   <!-- help and support -->
                   <li class="my-3">
-                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <div class="d-flex align-items-center">
                         <i class="fa-solid fa-question-circle me-3"></i>
                         <p class="my-auto">Help & Support</p>
@@ -782,10 +834,62 @@
                         <i class="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
+                    <!-- dd -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- dd end -->
                   </li>
                   <!-- Display and acces -->
                   <li class="my-3">
-                    <div class="dropdown-item d-flex align-items-center justify-content-between">
+                    <div class="dropdown-item d-flex align-items-center justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <div class="d-flex align-items-center">
                         <i class="fa-solid fa-moon me-3"></i>
                         <p class="my-auto">Display & Accessibility</p>
@@ -794,6 +898,57 @@
                         <i class="fa-solid fa-chevron-right"></i>
                       </div>
                     </div>
+                    <!-- dd -->
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-cog"></i>
+                          </div>
+                          <p class="m-0">Settings</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-lock"></i>
+                          </div>
+                          <p class="m-0">Privacy Checkup</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-unlock-alt"></i>
+                          </div>
+                          <p class="m-0">Privacy Shortcuts</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-list"></i>
+                          </div>
+                          <p class="m-0">Activity Log</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-newspaper"></i>
+                          </div>
+                          <p class="m-0">News Feed Preferences</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <div class="rounded-circle p-1 bg-gray d-flex align-items-center justify-content-center me-2" style="width: 38px; height: 38px">
+                            <i class="fas fa-globe"></i>
+                          </div>
+                          <p class="m-0">Language</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <!-- logout -->
                   <li class="my-3">
@@ -810,6 +965,186 @@
         </div>
       </div>
     </header>
+    <main>
+      <!--######## NewChat Modal ########-->
+      <div class="modal fade" id="newChat" tabindex="-1" aria-labelledby="newChatLabel" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog modal-sm w-75 shadow position-absolute bottom-0 end-0" style="transform: translateX(-80px)">
+          <div class="modal-content">
+            <!-- newChat header -->
+            <div class="modal-header">
+              <div>
+                <h6 class="modal-title mb-1" id="newChatLabel">New Message</h6>
+                <div class="d-flex">
+                  <p class="me-2 my-auto">To:</p>
+                  <input class="form-control w-75" type="text" />
+                </div>
+              </div>
+              <button type="button" class="btn-close mb-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- newChat body -->
+            <div class="modal-body shadow">
+              <a class="text-decoration-none mx-3" href="#">Suggested</a>
+            </div>
+            <!-- newChat Footer -->
+            <div class="modal-footer border-0" style="height: 300px"> </div>
+          </div>
+        </div>
+      </div>
+      <!--######## Existing Chat Modal ########-->
+      <div class="modal fade" id="existingChat" tabindex="-1" aria-labelledby="existingChatLabel" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog modal-sm w-75 shadow position-absolute bottom-0 end-0" style="transform: translateX(-80px)">
+          <div class="modal-content">
+            <!-- existingChat header -->
+            <div class="modal-header m-0">
+              <div
+                class="modal-title d-flex align-items-center m-0 dropdown-item"
+                type="button"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="bottom"
+                data-bs-content='
+                <div>
+                  <div class="popover-body d-flex flex-column p-0">
+                    <div class="d-flex align-items-center dropdown-item p-2 rounded pointer">
+                      <i class="far fa-comment me-3 fs-4"></i>
+                      <p class="m-0">Open Messenger App</p>
+                    </div>
+                    <div class="d-flex align-items-center dropdown-item p-2 rounded pointer">
+                      <i class="far fa-user me-3 fs-4"></i>
+                      <p class="m-0">Open Messenger App</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex align-items-center dropdown-item p-2 rounded pointer">
+                      <i class="fas fa-fill-drip me-3 fs-4"></i>
+                      <p class="m-0">Color</p>
+                    </div>
+                    <div class="d-flex align-items-center dropdown-item p-2 rounded pointer">
+                      <i class="far fa-smile-beam me-3 fs-4"></i>
+                      <p class="m-0">Emoji</p>
+                    </div>
+                    <div class="d-flex align-items-center dropdown-item p-2 rounded pointer">
+                      <i class="fas fa-pencil-alt me-3 fs-4"></i>
+                      <p class="m-0">Nicknames</p>
+                    </div>
+                  </div>
+                </div>
+                '
+                data-bs-html="true"
+              >
+                <!-- profile -->
+                <div class="me-2 position-relative">
+                  <img src="https://source.unsplash.com/random/1" alt="" width="45px" height="45px" class="rounded-circle object-fit-cover" />
+                  <span class="position-absolute bottom-0 end-0 p-1 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </div>
+                <div class="pt-3">
+                  <h6>Sajib <i class="fa-solid fa-chevron-down"></i></h6>
+                  <p class="fs-7">Active Now</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <i class="fa-solid fa-video me-3 text-primary" type="button"></i>
+                <i class="fa-solid fa-phone me-2 text-primary" type="button"></i>
+                <button type="button" class="btn-close mb-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <!-- existingChat body -->
+            <div class="modal-body overflow-auto" style="height: 300px">
+              <!-- msg sender 1 -->
+              <li class="d-flex">
+                <div class="me-2">
+                  <img src="https://source.unsplash.com/random/1" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+                <div>
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+              </li>
+              <!-- msg sender 2-->
+              <li class="d-flex justify-content-end">
+                <div class="me-2">
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+                <div>
+                  <img src="https://source.unsplash.com/random/2" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+              </li>
+              <!-- msg sender 1 -->
+              <li class="d-flex">
+                <div class="me-2">
+                  <img src="https://source.unsplash.com/random/1" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+                <div>
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+              </li>
+              <!-- msg sender 2-->
+              <li class="d-flex justify-content-end">
+                <div class="me-2">
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+                <div>
+                  <img src="https://source.unsplash.com/random/2" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+              </li>
+              <!-- msg sender 1 -->
+              <li class="d-flex">
+                <div class="me-2">
+                  <img src="https://source.unsplash.com/random/1" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+                <div>
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+              </li>
+              <!-- msg sender 2-->
+              <li class="d-flex justify-content-end">
+                <div class="me-2">
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+                <div>
+                  <img src="https://source.unsplash.com/random/2" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+              </li>
+              <!-- msg sender 1 -->
+              <li class="d-flex">
+                <div class="me-2">
+                  <img src="https://source.unsplash.com/random/1" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+                <div>
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+              </li>
+              <!-- msg sender 2-->
+              <li class="d-flex justify-content-end">
+                <div class="me-2">
+                  <p class="bg-grey py-1 px-2 rounded-3">Lorem, ipsum dolor</p>
+                </div>
+                <div>
+                  <img src="https://source.unsplash.com/random/2" alt="" width="25px" height="25px" class="rounded-circle" />
+                </div>
+              </li>
+            </div>
+            <!-- existingChat Footer -->
+            <div class="modal-footer border-0">
+              <div class="d-flex">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-plus-circle mx-1 fs-5 text-muted pointer"></i>
+                  <i class="far fa-file-image mx-1 fs-5 text-muted pointer"></i>
+                  <i class="fas fa-portrait mx-1 fs-5 text-muted pointer"></i>
+                  <i class="fas fa-adjust mx-1 fs-5 text-muted pointer"></i>
+                </div>
+                <div>
+                  <input type="text" class="form-control rounded-pill border-0 bg-grey" placeholder="Aa" />
+                </div>
+                <div class="d-flex align-items-center mx-2">
+                  <i class="fas fa-thumbs-up fs-5 text-muted pointer"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- Boostrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
