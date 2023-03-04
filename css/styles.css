@@ -40,6 +40,11 @@
 .modal-footer:hover i {
   color: #0d6efd !important;
 }
+
+/* sidebar */
+.scrollbar:hover {
+  overflow: auto !important;
+}
 /* @media (min-width: 800px) {
   footer {
     position: fixed;

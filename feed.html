@@ -12,10 +12,10 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="bg-grey postion-relative">
     <header>
-      <!--######## NavBar ########-->
-      <div class="shadow bg-white fixed-top p-1" style="min-height: 56px">
+      <!--============ NavBar ============-->
+      <div class="shadow bg-white fixed-top p-1" style="min-height: 56px; z-index: 5">
         <div class="contianer-fluid">
           <div class="row">
             <!-- Icon and search col -->
@@ -965,8 +965,8 @@
         </div>
       </div>
     </header>
-    <main>
-      <!--######## NewChat Modal ########-->
+    <main class="postion-relative" style="margin-top: 70px">
+      <!--============ NewChat Modal ============-->
       <div class="modal fade" id="newChat" tabindex="-1" aria-labelledby="newChatLabel" aria-hidden="true" data-bs-backdrop="false">
         <div class="modal-dialog modal-sm w-75 shadow position-absolute bottom-0 end-0" style="transform: translateX(-80px)">
           <div class="modal-content">
@@ -990,7 +990,7 @@
           </div>
         </div>
       </div>
-      <!--######## Existing Chat Modal ########-->
+      <!--=========== Existing Chat Modal ===========-->
       <div class="modal fade" id="existingChat" tabindex="-1" aria-labelledby="existingChatLabel" aria-hidden="true" data-bs-backdrop="false">
         <div class="modal-dialog modal-sm w-75 shadow position-absolute bottom-0 end-0" style="transform: translateX(-80px)">
           <div class="modal-content">
@@ -1144,6 +1144,248 @@
           </div>
         </div>
       </div>
+
+      <!--============ Feed section ============-->
+      <section class="container-fluid">
+        <div class="row">
+          <!--============ SideBar ============-->
+          <div class="col-12 col-lg-3 d-none d-lg-block">
+            <div class="h-100 fixed-top overflow-hidden scrollbar" style="max-width: 330px; width: 100%; z-index: 4">
+              <ul class="navbar-nav d-flex flex-column" style="padding-top: 64px">
+                <!-- avatar -->
+                <li class="dropdown-item my-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="fw-bold my-auto">Sajib</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- Friends -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="./images/social/s3.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Friends</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- Groups -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="./images/social/s4.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="m-0 p-0">Groups</p>
+                      <p class="m-0 p-0 fs-7 text-primary"><i class="fa-solid fa-circle text-primary"></i> 2 new</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- pages -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="./images/social/s6.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Pages</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- marketplace -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="./images/social/s5.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Marketplace</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- watch -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="./images/social/s1.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                    </div>
+                    <div>
+                      <p class="m-0 p-0">Watch</p>
+                      <p class="m-0 p-0 fs-7 text-primary"><i class="fa-solid fa-circle text-primary"></i> 8+ new videos</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- see more accordian -->
+                <div class="accordion accordion-flush" id="accordionSeeMore">
+                  <div class="">
+                    <!-- see more icons -->
+                    <li class="dropdown-item mb-3 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-grey mx-2 py-1 px-2 text-center">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div>
+                          <p class="my-auto">See More</p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- see more expand -->
+                    <div id="collapseOne" class="accordion-collapse collapse p-1" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div>
+                        <!-- Campus -->
+                        <li class="dropdown-item mb-3">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="./images/social/s1.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Campus</p>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- Event -->
+                        <li class="dropdown-item mb-3 p-1">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="./images/social/s5.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Events</p>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- Newsfeed -->
+                        <li class="dropdown-item mb-3 p-1">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="./images/social/s1.png" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Newsfeed</p>
+                            </div>
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- accordian end -->
+                <!-- Your shortcut -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-muted d-flex align-items-center" href="#">
+                    <h3>Your shortcuts</h3>
+                  </a>
+                </li>
+                <!-- shortcut 1 -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Lorem Ipsum</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- shortcut 2 -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Lorem Ipsum</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- shortcut 3 -->
+                <li class="dropdown-item mb-3 p-1">
+                  <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                    <div>
+                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                    </div>
+                    <div>
+                      <p class="my-auto">Lorem Ipsum</p>
+                    </div>
+                  </a>
+                </li>
+                <!-- See more shortcut -->
+                <div class="accordion accordion-flush" id="shortcutSeeMore">
+                  <div class="">
+                    <!-- see more icons -->
+                    <li class="dropdown-item mb-3 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShortcut" aria-expanded="false" aria-controls="collapseShortcut">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-grey mx-2 py-1 px-2 text-center">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div>
+                          <p class="my-auto">See More</p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- see more expand -->
+                    <div id="collapseShortcut" class="accordion-collapse collapse p-1" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div>
+                        <!-- shortcut4 -->
+                        <li class="dropdown-item mb-3 p-1">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Lorem Ipsum</p>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- shortcut5 -->
+                        <li class="dropdown-item mb-3 p-1">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Lorem Ipsum</p>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- shortcut5 -->
+                        <li class="dropdown-item mb-3 p-1">
+                          <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                            <div>
+                              <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                            </div>
+                            <div>
+                              <p class="my-auto">Lorem Ipsum</p>
+                            </div>
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </ul>
+            </div>
+          </div>
+          <!--============ Timeline ============-->
+          <div class="col-12 col-lg-6">
+            <!-- <h1>sajib</h1>s -->
+          </div>
+          <!--============ ChatBar ============-->
+          <div class="col-12 col-lg-3">
+            <div class="h-100 fixed-top end-0 overflow-hidden scrollbar" style="max-width: 330px; width: 100%; z-index: 4; left: initial !important">
+              <ul class="navbar-nav d-flex flex-column" style="padding-top: 64px">
+                <h2>sajib</h2>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Boostrap Js -->
