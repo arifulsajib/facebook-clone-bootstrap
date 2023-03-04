@@ -1144,6 +1144,24 @@
           </div>
         </div>
       </div>
+      <!--=========== Schedule room Modal ===========-->
+      <div class="modal fade" id="videoRoomModal" tabindex="-1" aria-labelledby="videoRoomModalLabel" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark">
+            <!-- header -->
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- body -->
+            <div class="modal-body d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+              <i class="fa-solid fa-video fs-0 text-secondary"></i>
+              <h3 class="text-white">Schedule A Room For Later</h3>
+              <p class="text-white text-center w-50 mx-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt alias laudantium itaque eius enim natus culpa eligendi consectetur maiores! </p>
+              <button class="btn btn-lg btn-primary rounded-pill"> Schedule Room </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--============ Feed section ============-->
       <section class="container-fluid">
@@ -1224,7 +1242,7 @@
                 <div class="accordion accordion-flush" id="accordionSeeMore">
                   <div class="">
                     <!-- see more icons -->
-                    <li class="dropdown-item mb-3 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <li class="dropdown-item mb-1 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       <div class="d-flex align-items-center">
                         <div class="rounded-circle bg-grey mx-2 py-1 px-2 text-center">
                           <i class="fa-solid fa-chevron-down"></i>
@@ -1275,6 +1293,7 @@
                   </div>
                 </div>
                 <!-- accordian end -->
+                <hr class="p-0 ms-2 me-4" />
                 <!-- Your shortcut -->
                 <li class="dropdown-item mb-3 p-1">
                   <a class="text-decoration-none text-muted d-flex align-items-center" href="#">
@@ -1285,7 +1304,7 @@
                 <li class="dropdown-item mb-3 p-1">
                   <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
                     <div>
-                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                      <img src="https://source.unsplash.com/random/2" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
                     </div>
                     <div>
                       <p class="my-auto">Lorem Ipsum</p>
@@ -1296,7 +1315,7 @@
                 <li class="dropdown-item mb-3 p-1">
                   <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
                     <div>
-                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                      <img src="https://source.unsplash.com/random/3" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
                     </div>
                     <div>
                       <p class="my-auto">Lorem Ipsum</p>
@@ -1307,7 +1326,7 @@
                 <li class="dropdown-item mb-3 p-1">
                   <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
                     <div>
-                      <img src="https://source.unsplash.com/random/1" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
+                      <img src="https://source.unsplash.com/random/5" alt="" width="40px" height="40px" class="object-fit-cover rounded mx-2" />
                     </div>
                     <div>
                       <p class="my-auto">Lorem Ipsum</p>
@@ -1370,6 +1389,10 @@
                 </div>
                 <!-- end -->
               </ul>
+              <!-- terms -->
+              <div class="p-2 mt-5">
+                <p class="text-muted fs-7"> Privacy &#8226; Terms &#8226; Advertising &#8226; Ad Choices &#8226; Cookies &#8226; Flexbook © 2023 </p>
+              </div>
             </div>
           </div>
           <!--============ Timeline ============-->
@@ -1377,10 +1400,296 @@
             <!-- <h1>sajib</h1>s -->
           </div>
           <!--============ ChatBar ============-->
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-lg-3 d-none d-lg-block">
             <div class="h-100 fixed-top end-0 overflow-hidden scrollbar" style="max-width: 330px; width: 100%; z-index: 4; left: initial !important">
               <ul class="navbar-nav d-flex flex-column" style="padding-top: 64px">
-                <h2>sajib</h2>
+                <!-- sponsored -->
+                <div>
+                  <li class="dropdown-item my-3 p-1">
+                    <h4>Sponsored</h4>
+                  </li>
+                  <!-- sponsor1 -->
+                  <li class="dropdown-item my-3 p-1 d-flex align-items-between">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                      <!-- image and title -->
+                      <div>
+                        <img src="https://source.unsplash.com/random/3" alt="" width="90px" height="90px" class="object-fit-cover rounded mx-2" />
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <p class="p-0 m-0">Lorem Ipsum</p>
+                        <p class="p-0 m-0 fs-7">loeremipsum.com</p>
+                      </div>
+                    </a>
+                    <!-- setting -->
+                    <div class="ms-4">
+                      <!-- setting icon -->
+                      <i class="fa-solid fa-ellipsis rounded-circle bg-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                      <!-- setting dd -->
+                      <ul class="dropdown-menu">
+                        <!-- hide ad -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="far fa-window-close"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Hide Ad</p>
+                              <span class="text-muted fs-7">Never see this add again.</span>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- report ad -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Report Ad</p>
+                              <span class="text-muted fs-7">Tell us a problem with this add</span>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- why iam see -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="fas fa-info-circle"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Why i am seeing this?</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- dd end -->
+                    </div>
+                  </li>
+                  <!-- sponsor2 -->
+                  <li class="dropdown-item my-3 p-1 d-flex align-items-between">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#">
+                      <!-- image and title -->
+                      <div>
+                        <img src="https://source.unsplash.com/random/2" alt="" width="90px" height="90px" class="object-fit-cover rounded mx-2" />
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <p class="p-0 m-0">Lorem Ipsum</p>
+                        <p class="p-0 m-0 fs-7">loeremipsum.com</p>
+                      </div>
+                    </a>
+                    <!-- setting -->
+                    <div class="ms-4">
+                      <!-- setting icon -->
+                      <i class="fa-solid fa-ellipsis rounded-circle bg-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                      <!-- setting dd -->
+                      <ul class="dropdown-menu">
+                        <!-- hide ad -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="far fa-window-close"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Hide Ad</p>
+                              <span class="text-muted fs-7">Never see this add again.</span>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- report ad -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Report Ad</p>
+                              <span class="text-muted fs-7">Tell us a problem with this add</span>
+                            </div>
+                          </a>
+                        </li>
+                        <!-- why iam see -->
+                        <li class="p-2">
+                          <a href="#" class="d-flex dropdown-item align-items-center text-decoration-none text-dark">
+                            <i class="fas fa-info-circle"></i>
+                            <div class="ms-3">
+                              <p class="m-0">Why i am seeing this?</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- dd end -->
+                    </div>
+                  </li>
+                </div>
+                <hr />
+                <!-- Contacts -->
+                <div>
+                  <!-- header -->
+                  <li class="dropdown-item mb-3 p-1 d-flex align-items-center justify-content-between">
+                    <h4>Contacts</h4>
+                    <div class="d-flex align-items-center">
+                      <!-- video room -->
+                      <i class="fa-solid fa-video me-2" type="button" data-bs-toggle="modal" data-bs-target="#videoRoomModal"></i>
+                      <!-- search message -->
+                      <i class="fa-solid fa-search me-2" type="button" data-bs-toggle="modal" data-bs-target="#newChat"></i>
+                      <!-- message settings -->
+                      <div>
+                        <!-- message setting icon -->
+                        <i class="fa-solid fa-ellipsis me-2 object-fit-cover" alt="menu" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></i>
+                        <!-- message setting dd -->
+                        <ul class="dropdown-menu p-1 border-0 shadow overflow-auto" style="width: 18em">
+                          <!-- dd message setting header -->
+                          <li class="p-1 my-3">
+                            <h4>Chat Setting</h4>
+                            <p class="text-muted fs-7 m-0">Customize your Messanger experience</p>
+                          </li>
+                          <hr />
+                          <!-- incoming call sounds  -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-phone me-2"></i>
+                                <p class="my-auto">Incoming call sounds</p>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked />
+                              </div>
+                            </div>
+                          </li>
+                          <!-- message sounds -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-volume-off me-2"></i>
+                                <p class="my-auto">Message sounds</p>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked />
+                              </div>
+                            </div>
+                          </li>
+                          <!-- popup message -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-spinner me-2"></i>
+                                <p class="my-auto">Pop-up new messages</p>
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" checked />
+                              </div>
+                            </div>
+                          </li>
+                          <p class="fs-7 text-muted text-center m-0">Automatically open new messages</p>
+                          <hr />
+                          <!-- Turn off active -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-toggle-off me-2"></i>
+                              <p class="my-auto">Incoming call sounds</p>
+                            </div>
+                          </li>
+                          <!-- message request -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-comment-alt me-2"></i>
+                              <p class="my-auto">Message Request</p>
+                            </div>
+                          </li>
+                          <!-- message delivery -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-share-square me-2"></i>
+                              <p class="my-auto">Message delivery setting</p>
+                            </div>
+                          </li>
+                          <!-- block -->
+                          <li class="my-2">
+                            <div class="dropdown-item d-flex align-items-center">
+                              <i class="fa-solid fa-shield-alt me-2"></i>
+                              <p class="my-auto">Block setting</p>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- dd end -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- chat1 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/3" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Ariful</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat2 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/4" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Hasan</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat3 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/5" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Stone</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat4 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/6" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Kawser</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat5 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/8" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Sara</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat6 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/9" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Mika</p>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- chat7 -->
+                  <li class="dropdown-item mb-3 p-1">
+                    <a class="text-decoration-none text-dark d-flex align-items-center" href="#" type="button" data-bs-toggle="modal" data-bs-target="#existingChat">
+                      <div class="position-relative">
+                        <img src="https://source.unsplash.com/random/5" alt="" width="40px" height="40px" class="object-fit-cover rounded-circle mx-2" />
+                        <i class="fa-solid fa-circle text-success position-absolute bottom-0 end-0 fs-8" style="left: 70%"></i>
+                      </div>
+                      <div>
+                        <p class="my-auto mx-1">Arijit</p>
+                      </div>
+                    </a>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
