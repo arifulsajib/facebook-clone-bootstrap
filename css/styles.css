@@ -45,6 +45,27 @@
 .scrollbar:hover {
   overflow: auto !important;
 }
+
+/* story */
+.story:hover {
+  opacity: 0.8;
+}
+
+/* comment */
+.post__comment .accordion-button::after {
+  margin-left: 0 !important;
+  display: none !important;
+}
+.post__comment .accordion-button:hover {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.post__comment .accordion-button:not(.collapsed) {
+  background: transparent !important;
+}
+.post__comment .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
 /* @media (min-width: 800px) {
   footer {
     position: fixed;
