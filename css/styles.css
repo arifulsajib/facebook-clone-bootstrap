@@ -66,10 +66,13 @@
 .post__comment .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
-/* @media (min-width: 800px) {
+
+/* 
+@media (min-width: 800px) {
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
   }
-} */
+} 
+*/
